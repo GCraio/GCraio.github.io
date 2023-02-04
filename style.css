@@ -1,0 +1,110 @@
+img {
+    border-radius: 50%;
+    margin-right: 80px;
+}
+
+p.titleLinks{
+    font-family: Papyrus, Fantasy;
+}
+
+p{
+    font-family: Lucida Handwriting, Cursive;
+}
+
+li{
+    font-family: Lucida Handwriting, Cursive;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title {
+    background-color: purple;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid black;
+    color: white;
+}
+
+.belowTitle{
+    background-color: lightgray;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid white;
+    color: white;
+}
+
+a { 
+    color: black; 
+    text-decoration: none; 
+    cursor: auto; 
+} 
+
+.link:hover { 
+    color: purple; 
+}
+
+.left{
+    padding-top: 125px; 
+    padding-right: 100px; /* 50 */
+    align-items: center;
+    border-right: 1px solid lightgray;
+    height: 100%;
+    width: 20%; /*20*/
+    float: left;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* you can also use "min-width" or a combination of both: */
+/* @media only screen and (max-width: 800px) and (min-width: 400px)  */
+@media all and (max-width: 800px) {
+  /* padding only if screen is 800px or smaller */
+  /* this has a higher precedence and wins the default padding when */
+  /* the condition is met */
+  .left{
+    padding-top: 125px; 
+    padding-right: 50px; 
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    border-right: white;
+    height: 100%;
+    width: 40%; /*20*/
+    float: none;
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    margin: 30px;
+    padding: 1px;
+    border: 1px solid white;
+    color: white;
+}
+.footer2 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid white;
+    color: black;
+    text-align: center;
+}
